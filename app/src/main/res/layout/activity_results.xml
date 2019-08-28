@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Results"
+
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+    <!-- Row1 Column1 -->
+
+
+
+
+        <TextView
+            android:id="@+id/salary_textview"
+            android:text="مقدار الراتب "
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_span="5"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/brutto"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:background="#fbf"
+            android:padding="5dp"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_height="wrap_content"
+            android:text="الراتب قبل خصم الضرائب "
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+
+
+
+        <TextView
+            android:id="@+id/netto_gehalt"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:background="#fdf"
+            android:padding="5dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:text="الراتب الصافي "
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+
+            android:textSize="16sp" />
+
+
+        </TableRow>
+
+
+    <TableRow>
+
+            <TextView
+                android:id="@+id/lohnsteuer"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fdf"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:text=" ضريبة أجرة العمل"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+
+            <TextView
+                android:id="@+id/solisteuer"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fdf"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/writesolisteuer"
+                android:layout_height="wrap_content"
+                android:text="ضريبة التضامن"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+
+        </TableRow>
+        <TableRow>
+
+
+
+
+            <TextView
+                android:id="@+id/kirchesteuer"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fdf"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/writekirchesteuer"
+                android:layout_height="wrap_content"
+                android:text="ضريبة الكنيسة "
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+
+        </TableRow>
+        <TableRow>
+
+
+
+
+            <TextView
+                android:id="@+id/Krankenversicherung"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fdf"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/writekrankenversicherung"
+                android:layout_height="wrap_content"
+                android:text="التأمين الصحي "
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+
+        </TableRow>
+
+
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/Rentenversicherung"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fdf"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/writerenteversicherung"
+                android:layout_height="wrap_content"
+                android:text="التأمين التقاعدي "
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+
+            <TextView
+                android:id="@+id/Arbeitslosenversicherung"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fdf"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/writearbeitslosigkeitgeld"
+                android:layout_height="wrap_content"
+                android:text="تأمين البطالة  "
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+
+        </TableRow>
+        <TableRow>
+
+
+
+
+            <TextView
+                android:id="@+id/Pflegeversicherung"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:background="#fdf"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/writepflegesicherung"
+                android:layout_height="wrap_content"
+                android:text="تأمين الرعاية التمريضية  "
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+
+        </TableRow>
+
+
+
+
+
+</TableLayout>

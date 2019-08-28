@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <string name="age">العمر 30 </string>
+    <string name="salary">الراتب 2000</string>
+
+    <string name="KV">التأمين: </string>
+    <string name="privatee">تأمين صحي خاص </string>
+    <string name="publice">حكومي </string>
+
+    <string name="Kirche">مسجل بالكنيسة </string>
+    <string name="Kinder">تملك أطفال </string>
+    <string name="gkv">حكومي </string>
+    <string name="gkv_zus">حكومي </string>
+    <string name="pkv">مقدار الدفع لشركة التأمين الخاص </string>
+    <string name="pflege">مقدار الدفع للعناية </string>
+    <string name="gkv_zusatzbeitrag">مقدار الدفع للعتاية </string>
+
+
+
+
+
+
+    <string-array name="State_array">
+
+            <item>بادن-فورتمبيرغ</item>
+            <item>بافاريا</item>
+            <item> برلين</item>
+        <item>براندنبورغ</item>
+        <item>بريمن</item>
+        <item>هامبورغ</item>
+        <item>هسن</item>
+        <item>سكسونيا السفلى</item>
+        <item>مكلنبورغ-فوربومرن</item>
+        <item>شمال الراين-وستفاليا</item>
+        <item>راينلند-بالاتينات</item>
+        <item>سارلاند</item>
+        <item>ساكسونيا</item>
+        <item> 	ساكسونيا-أنهالت</item>
+        <item> 	شلسفيغ-هولشتاين</item>
+        <item>شلسفيغ-هولشتاين</item>
+        <item>تورينغن</item>
+
+
+        </string-array>
+
+    <string-array name="timezone_array">
+        <item>WOCHE</item>
+        <item>MONAT</item>
+        <item>YEAR</item>
+        <item>اسبوع</item>
+        <item>شهر</item>
+        <item>سنة</item>
+
+    </string-array>
+
+    <string-array name="years_array">
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+
+    <string-array name="steuerklassen_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="kinderfreibeitrege_array">
+        <item>0.0</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="calculate">احسب الضرائب </string>
+    <string name="register_form_text">أهلأ بكم في برنامج  حساب الصافي والضرائب في المانيا البرنامج العربي الأول.</string>
+    <string name="no_field_can_be_empty">الرجاء تعبئة كافة الحقول المطلوبة </string>
+
+</resources>

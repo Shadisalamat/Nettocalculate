@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="@string/register_form_text"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="  الولاية:"
+
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_state"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/State_array"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="  السنة:"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:entries="@array/years_array" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="الصف الضريبي: "
+
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_steuerklasse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/steuerklassen_array"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="المدة الزمنية : "
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_timezone"
+            android:layout_width="fill_parent"
+            android:entries="@array/timezone_array"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="الراتب" />
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="العمر"/>
+
+
+        <RelativeLayout
+
+            android:id="@+id/container_Krankenkasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/text"
+                android:text="@string/Choice_Krankenkasse" />
+
+            <RadioGroup
+                android:id="@+id/myRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+
+
+                android:checkedButton="@+id/Gesetzlich_Krankenkasse_RadioButton">
+
+                <RadioButton
+                    android:id="@+id/Gesetzlich_Krankenkasse_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Gesetzlich_Krankenkasse" />
+                <EditText
+                    android:id="@+id/gkv_zusatzbeitrag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="مبلغ إضافي تضيفه الشركات  يدفع فوق 0.9"/>
+                <RadioButton
+                    android:id="@+id/Private_Krankenkasse_RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Private_Krankenkasse" />
+                <EditText
+                    android:id="@+id/pkv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="النسبة المئوية للدفع لشركة التأمين الخاص"/>
+
+                <EditText
+                    android:id="@+id/pflege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="النسبة المئوية للدفع للعناية"/>
+
+
+
+                <Switch
+                    android:id="@+id/simpleSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="يدفع معي رب العمل"
+                    android:layout_centerHorizontal="true"
+                    android:textOn="On"
+                    android:textOff="Off"
+                    android:gravity="center"
+                    android:textColor="#008F36"/>
+
+            </RadioGroup>
+
+    </RelativeLayout>
+
+
+        <CheckBox
+            android:id="@+id/Kinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الأطفال " />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="فئة الاعفاء الضريبي  : "
+
+            android:layout_marginBottom="5dp"/>
+        <Spinner
+            android:id="@+id/spinner_kinderfreibeitraege"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/kinderfreibeitrege_array"
+            android:gravity="start" />
+
+        <CheckBox
+            android:id="@+id/Kirche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" الكنيسة" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:onClick="btuCal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="حساب" />
+        <Button
+            android:id="@+id/aboutus_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="من نحن " />
+
+
+    </LinearLayout>
+
+</ScrollView>
